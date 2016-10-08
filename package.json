@@ -1,0 +1,24 @@
+{
+  "name": "rebirth-model",
+  "version": "1.0.0",
+  "description": "generate typescript model from json schema",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ts",
+    "model",
+    "json",
+    "schema"
+  ],
+  "author": "greengerong",
+  "license": "MIT",
+  "dependencies": {
+    "bunyan": "^1.8.1",
+    "commander": "^2.9.0",
+    "generate-schema": "^2.3.1",
+    "lodash": "^4.16.2",
+    "request": "^2.75.0"
+  }
+}

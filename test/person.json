@@ -1,0 +1,67 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "first_name": {
+      "type": "string"
+    },
+    "age": {
+      "type": "integer",
+      "default": 18
+    },
+    "sex": {
+      "type": "string",
+      "enum": [
+        "MALE",
+        "FEMALE"
+      ]
+    },
+    "friend": {
+      "type": "array",
+      "items": {
+        "type": "integer"
+      }
+    },
+    "address": {
+      "type": "object",
+      "properties": {
+        "streetAddress": {
+          "type": "string"
+        },
+        "city": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "streetAddress",
+        "city"
+      ]
+    },
+    "phoneNumber": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "location": {
+            "type": "string"
+          },
+          "code": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "location",
+          "code"
+        ]
+      }
+    }
+  },
+  "required": [
+    "id",
+    "address",
+    "phoneNumber"
+  ]
+}
